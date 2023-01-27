@@ -9,7 +9,7 @@ const port = 3000;
 // setup the logger
 app.use(morgan('tiny'));
 
-app.get('/', async (req, res) => {
+app.get('/api/node', async (req, res) => {
   const dateTime = await getDateTime();
   const response = dateTime;
   response.api = 'node';

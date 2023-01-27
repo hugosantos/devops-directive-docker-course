@@ -25,7 +25,7 @@ func main() {
 	r := gin.Default()
 	var tm time.Time
 
-	r.GET("/", func(c *gin.Context) {
+	r.GET("/api/golang", func(c *gin.Context) {
 		tm = database.GetTime(c)
 		c.JSON(200, gin.H{
 			"api": "golang",
