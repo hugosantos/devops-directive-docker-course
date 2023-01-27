@@ -12,3 +12,8 @@ dependency: {
 		version: "2feddd6646e68c0c22e92e00e8194b89985fd574"
 	}
 }
+
+// Need latest ingress management features.
+requirements: {
+	api: 65
+}
